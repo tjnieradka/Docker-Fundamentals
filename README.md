@@ -1,30 +1,41 @@
-# Docker Fundamentals
+# Docker Foundations — Ubuntu Lab
 
-## Overview
+Practical notes and repeatable exercises covering Docker Engine, container lifecycle, images, Dockerfiles, networking, storage, Compose, registries, and troubleshooting.
 
-This repository documents hands-on exercises and foundational concepts related to Docker containerization, including container management, Docker images, networking, persistent storage, and multi-container applications.
+**Purpose:** demonstrate foundational Docker knowledge and experimentation in a personal Ubuntu Linux lab. This is a learning portfolio, not a production deployment guide.
 
-The project is based on self-directed training and practical exercises conducted in a personal lab environment.
+## Lab
 
-## Objectives
-
-- Understand containerization and Docker architecture.
-- Create and manage Docker containers and images.
-- Explore Docker networking and persistent storage.
-- Build and run containerized applications.
-- Use Docker Compose to manage multi-container environments.
-- Develop basic Docker troubleshooting skills.
-- Gain introductory familiarity with container orchestration concepts.
-
-## Lab Environment
-
-*To be documented.*
+- Host: `VAN-DOCKER-TEST` (Ubuntu 24.04.3 LTS virtual machine)
+- Observed Docker Engine: 28.4.0; Compose: 2.39.2; Buildx: 0.27.0
+- 4 vCPUs; approximately 7.7 GiB RAM; `overlay2` storage driver
+- Environment was reset by removing previous training containers/images before repeating exercises.
 
 ## Documentation
 
-*Links to individual technical documents will be added as exercises are completed.*
+1. [Container fundamentals](docs/01-Container-Fundamentals.md)
+2. [Docker architecture](docs/02-Docker-Architecture.md)
+3. [Lab environment](docs/03-Lab-Environment.md)
+4. [Container management](docs/04-Container-Management.md)
+5. [Images and Dockerfiles](docs/05-Docker-Images-and-Dockerfiles.md)
+6. [Storage](docs/06-Docker-Storage.md)
+7. [Networking](docs/07-Docker-Networking.md)
+8. [Compose](docs/08-Docker-Compose.md)
+9. [Registries](docs/09-Registries-and-Image-Distribution.md)
+10. [Troubleshooting](docs/10-Docker-Troubleshooting.md)
+11. [Orchestration overview](docs/11-Container-Orchestration-Overview.md)
+12. [Original multi-container application — planned](docs/12-Multi-Container-Application.md)
+
+## Evidence convention
+
+`[SCREENSHOT TO ADD]` indicates a suggested screenshot, **not** a completed exercise. Replace it with a relative image link and an explanation only after running the commands and verifying the result. Avoid posting passwords, tokens, private IPs if sensitive, or unrelated system information.
+
+## Scope and attribution
+
+Based on independent review and hands-on exercises informed by a Udemy/KodeKloud Docker course (57 of 60 lessons completed when this repository was drafted). Examples have been adapted and simplified; the original multi-container application is deliberately deferred. Commands and outputs are not represented as tested until actually executed in the lab.
 
 ## References
 
-- Docker Official Documentation
-- Udemy Docker Training Course
+- [Docker documentation](https://docs.docker.com/)
+- [Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
+- [Compose Specification](https://docs.docker.com/reference/compose-file/)
