@@ -7,7 +7,7 @@ Practical notes and repeatable exercises covering Docker Engine, container lifec
 ## Lab
 
 - Host: `VAN-DOCKER-TEST` (Ubuntu 24.04.3 LTS virtual machine)
-- Observed Docker Engine: 28.4.0; Compose: 2.39.2; Buildx: 0.27.0
+- Docker Engine: 28.4.0; Compose: 2.39.2; Buildx: 0.27.0
 - 4 vCPUs; approximately 7.7 GiB RAM; `overlay2` storage driver
 - Environment was reset by removing previous training containers/images before repeating exercises.
 
@@ -25,10 +25,6 @@ Practical notes and repeatable exercises covering Docker Engine, container lifec
 10. [Troubleshooting](docs/10-Docker-Troubleshooting.md)
 11. [Orchestration overview](docs/11-Container-Orchestration-Overview.md)
 12. [Original multi-container application — planned](docs/12-Multi-Container-Application.md)
-
-## Evidence convention
-
-`[SCREENSHOT TO ADD]` indicates a suggested screenshot, **not** a completed exercise. Replace it with a relative image link and an explanation only after running the commands and verifying the result. Avoid posting passwords, tokens, private IPs if sensitive, or unrelated system information.
 
 ## Scope and attribution
 
