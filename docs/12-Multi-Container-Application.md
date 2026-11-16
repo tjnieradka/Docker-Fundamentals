@@ -8,7 +8,7 @@ Design an original small application that demonstrates communication between at 
 
 Possible direction: a minimal inventory or status-tracking web application with a backend data store. This is only a project idea, not a completed design.
 
-## Planned evidence
+## Planned content
 
 - Application architecture diagram
 - Source code and Dockerfiles
@@ -17,4 +17,3 @@ Possible direction: a minimal inventory or status-tracking web application with 
 - Build, startup, verification, and troubleshooting screenshots
 - Cleanup and lessons learned
 
-The course's voting application will not be copied into this repository. Work will begin after foundational exercises are documented.
