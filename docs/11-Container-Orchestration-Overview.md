@@ -20,6 +20,6 @@ Kubernetes does **not** require Docker Engine or always use containerd. Docker E
 
 ## Lab status
 
-This repository does not currently demonstrate a Swarm or Kubernetes cluster. No orchestration screenshots are required. Commands such as `kubectl get pods` should only be shown as executed after a real cluster is configured.
+This repository does not currently demonstrate a Swarm or Kubernetes cluster. No orchestration screenshots are available. Commands such as `kubectl get pods` could only be shown as executed after a real cluster is configured.
 
 References: https://kubernetes.io/docs/concepts/overview/components/ ; https://docs.docker.com/engine/swarm/
