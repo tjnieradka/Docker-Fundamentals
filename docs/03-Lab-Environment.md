@@ -24,6 +24,9 @@ Docker was installed before this documentation project; the installation is **no
 cat /etc/os-release
 uname -r
 dpkg --print-architecture
+nproc
+free -h
+
 docker --version
 docker compose version
 docker buildx version
@@ -54,4 +57,3 @@ docker network ls
 - `ss -lnt` — review listening TCP sockets.
 - `df -h` — check disk capacity.
 
-These are supporting host commands, not a general Linux administration course.
