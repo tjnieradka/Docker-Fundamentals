@@ -6,7 +6,9 @@ A Dockerfile defines image-building instructions. Docker builds an image from a 
 
 ## Minimal original example
 
-The repository includes a small Python HTTP example in [`../examples/python-web/`](../examples/python-web/). It is an independent demonstration, not the course's Flask application.
+The repository includes a small Python HTTP example in [`../examples/python-web/`](../examples/python-web/). 
+
+**Dockerfile** 
 
 ```dockerfile
 FROM python:3.12-slim
