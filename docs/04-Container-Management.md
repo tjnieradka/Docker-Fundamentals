@@ -35,8 +35,8 @@ A container exits when its main process completes. An exited container remains l
 docker run -d --name nginx-demo -p 8080:80 nginx:stable
 docker ps
 docker logs nginx-demo
-docker exec nginx-demo nginx -v
 curl -I http://localhost:8080
+
 docker stop nginx-demo
 docker rm nginx-demo
 ```
