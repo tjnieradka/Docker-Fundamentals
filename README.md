@@ -8,8 +8,10 @@ Practical notes and repeatable exercises covering Docker Engine, container lifec
 
 - Host: `VAN-DOCKER-TEST` (Ubuntu 24.04.3 LTS virtual machine)
 - Docker Engine: 28.4.0; Compose: 2.39.2; Buildx: 0.27.0
-- 4 vCPUs; approximately 7.7 GiB RAM; `overlay2` storage driver
+- 4 vCPUs; approximately 8 GiB RAM; `overlay2` storage driver
+- Remote test machine: `VAN-ROCKY-TEST` (Rocky Linux 8.10 (Green Obsidian) virtual machine)
 - Environment was reset by removing previous training containers/images before repeating exercises.
+
 
 ## Documentation
 
@@ -28,7 +30,7 @@ Practical notes and repeatable exercises covering Docker Engine, container lifec
 
 ## Scope and attribution
 
-Based on independent review and hands-on exercises informed by a Udemy/KodeKloud Docker course (57 of 60 lessons completed when this repository was drafted). Examples have been adapted and simplified; the original multi-container application is deliberately deferred. Commands and outputs are not represented as tested until actually executed in the lab.
+Based on independent review and hands-on exercises referenced on a Udemy/KodeKloud Docker course. Examples have been adapted and simplified; the original multi-container application is deliberately deferred. Commands and outputs are not represented as tested until actually executed in the lab.
 
 ## References
 
