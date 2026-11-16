@@ -47,7 +47,7 @@ ENTRYPOINT ["sleep"]
 CMD ["5"]
 ```
 
-`docker run IMAGE 10` runs `sleep 10`; `docker run --entrypoint sh IMAGE` replaces the entrypoint. Prefer JSON exec-form syntax for predictable signal handling.
+`docker run IMAGE 10` runs `sleep 10`; `docker run --entrypoint sh IMAGE` replaces the entrypoint. Using this format allows Docker to run the command directly and handle stop signals more reliably.
 
 ## BuildKit / Buildx
 
