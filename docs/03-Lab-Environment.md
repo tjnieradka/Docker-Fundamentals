@@ -7,7 +7,7 @@
 | Hostname | `VAN-DOCKER-TEST` |
 | OS | Ubuntu 24.04.3 LTS |
 | Architecture | x86_64 |
-| CPU / memory | 4 vCPUs / 7.709 GiB |
+| CPU / memory | 4 vCPUs / 8 GiB |
 | Docker Engine | 28.4.0 Community |
 | Docker Compose | v2.39.2 |
 | Buildx | v0.27.0 |
