@@ -45,7 +45,7 @@ docker rm nginx-demo
 
 **[SCREENSHOT TO ADD]** `docker ps` showing published port and browser/curl response from Nginx.
 
-## Interactive and attached modes
+## Exercise C - interactive and attached mode
 
 ```bash
 docker run --rm -it alpine sh
