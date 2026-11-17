@@ -2,6 +2,8 @@
 
 ## Components
 
+Here is an overview of Docker components:
+
 - **Docker CLI (`docker`):** client used to issue commands.
 - **Docker daemon (`dockerd`):** manages images, containers, networks, and volumes and exposes an API.
 - **containerd:** container lifecycle and runtime management.
