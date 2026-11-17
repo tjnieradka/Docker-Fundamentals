@@ -8,6 +8,10 @@ Example: `docker.io/library/nginx:stable`.
 
 Common registries include Docker Hub (`docker.io`), GitHub Container Registry (`ghcr.io`), Amazon ECR, Azure Container Registry, and Google Artifact Registry. Authentication, permissions, and pull limits depend on the provider and account.
 
+Repository versus registry:
+- A repository is a collection of related image versions identified by tags.
+- A registry is a service that stores and distributes container images, such as Docker Hub.
+
 ## Local exercise
 
 ```bash
