@@ -34,7 +34,7 @@ docker stop foundations-web && docker rm foundations-web
 ![Dockerfile Demo 4](../screenshots/5-dockerfile-demo-4.png)  
 
 
-*Successful build output and `docker image ls`. Successful browser output from running custom image*
+*Successful build output and browser output from running custom image*
 
 ## CMD versus ENTRYPOINT
 
@@ -44,13 +44,18 @@ docker stop foundations-web && docker rm foundations-web
 
 Example:
 
+Example Dockerfile:
 ```dockerfile
 FROM alpine:3.21
 ENTRYPOINT ["sleep"]
 CMD ["5"]
 ```
+In this example, ENTRYPOINT specifies the sleep command, while CMD provides a default duration of 5 seconds.
+- `docker run IMAGE` runs sleep 5.
+- `docker run IMAGE 10` overrides the default duration and runs sleep 10.
+- `docker run --entrypoint sh IMAGE` replaces the sleep command with the Alpine shell.
 
-`docker run IMAGE 10` runs `sleep 10`; `docker run --entrypoint sh IMAGE` replaces the entrypoint. Using this format allows Docker to run the command directly and handle stop signals more reliably.
+The bracketed format allows Docker to execute commands directly and handle stop signals more reliably.
 
 ## BuildKit / Buildx
 
