@@ -17,7 +17,7 @@ docker run --rm --network foundations-net busybox nslookup web-a
 docker network inspect foundations-net
 ```
 
-Docker's embedded DNS on user-defined networks allows containers to resolve other containers by name. The internal resolver commonly appears as `127.0.0.11`, not `17.0.0.11`.
+Docker's embedded DNS on user-defined networks allows containers to resolve other containers by name. The internal resolver commonly appears as `127.0.0.11`.
 
 **[SCREENSHOT TO ADD]** `nslookup web-a` and network inspection output.
 
