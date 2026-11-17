@@ -30,11 +30,11 @@ docker info
 docker context ls
 ```
 
-![VM Hardware](../screenshots/2a-VM-HW.png)
+
 ![Docker Info](../screenshots/2b-docker-info.png)
 
 
-*Selected OS and VMWare image information as well as output from `docker info` lines showing client/server, runtime, cgroups, and storage driver.*
+*Selected output from `docker info` lines showing client/server, runtime, cgroups, and storage driver.*
 
 ## Security notes
 
