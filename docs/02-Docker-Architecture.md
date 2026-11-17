@@ -28,11 +28,18 @@ docker info
 docker context ls
 ```
 
-**[SCREENSHOT TO ADD]** Selected `docker info` lines showing client/server, runtime, cgroups, and storage driver. Do not publish the entire output if it includes information you prefer to keep private.
+![VM Hardware](../screenshots/2a-VM-HW.png)
+![Docker Info](../screenshots/2b-docker-info.png)
+
+
+*Selected OS and VMWare image information as well as output from `docker info` lines showing client/server, runtime, cgroups, and storage driver.*
 
 ## Security notes
 
-Access to a rootful Docker daemon is highly privileged; membership in the `docker` group effectively grants root-level access. Avoid publishing the daemon API on an unprotected TCP port. Prefer SSH contexts or properly secured TLS for remote administration. Rootless Docker is an alternative security model, but is not configured in this lab.
+- Docker requires elevated privileges to manage containers, images, and networks. Users in the `docker` group effectively have root-level access to the host.
+- Avoid exposing the Docker daemon directly over an unsecured network connection.
+- Remote Docker administration should use secure connections, such as SSH or TLS.
+- Docker also supports *rootless mode*, which allows the daemon and containers to run without root privileges. This lab uses the standard Docker configuration rather than rootless mode.
 
 ## Storage backend note
 
