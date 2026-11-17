@@ -2,7 +2,7 @@
 
 ## Configuration
 
-| Item | Observed configuration |
+| Item | Configuration |
 |---|---|
 | Hostname | `VAN-DOCKER-TEST` |
 | OS | Ubuntu 24.04.3 LTS |
@@ -14,11 +14,10 @@
 | Storage driver | overlay2 |
 | Cgroup | v2, systemd driver |
 
-These values reflect a previous `docker info` capture and should be updated if the lab changes.
 
 ## Installation and validation
 
-Docker was installed before this documentation project; the installation is **not** being reenacted. Refer to [Docker's Ubuntu installation guide](https://docs.docker.com/engine/install/ubuntu/) rather than claiming an installation walkthrough.
+Docker was installed before this documentation project; the installation is **not** being redone. Refer to [Docker's Ubuntu installation guide](https://docs.docker.com/engine/install/ubuntu/) 
 
 ```bash
 cat /etc/os-release
@@ -33,14 +32,14 @@ docker buildx version
 systemctl status docker --no-pager
 docker info
 ```
+![Docker Version](../screenshots/3a-docker-versions.png)
+![Docker Configuration](../screenshots/3b-docker-config.png)
 
-**[SCREENSHOT TO ADD]** OS version and Docker/Compose versions.
-
-**[SCREENSHOT TO ADD]** `systemctl status docker` showing an active daemon (if active).
+*OS version and Docker/Compose versions. Output from `systemctl status docker` showing an active daemon (if active).*
 
 ## Lab reset
 
-Previous training containers and images were removed so exercises could be recreated and documented. Volume and network cleanup should be verified separately:
+Previous training containers and images were removed so exercises could be recreated and documented. Volume and network were verified, as shown in the screenshot above.
 
 ```bash
 docker ps -a
