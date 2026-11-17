@@ -38,6 +38,7 @@ docker ps
 docker logs nginx-demo
 curl -I http://localhost:8080
 
+# cleanup
 docker stop nginx-demo
 docker rm nginx-demo
 ```
