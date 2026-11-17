@@ -21,7 +21,10 @@ docker volume inspect foundations-data
 
 The second container should read the file created by the first, even though the first container was removed.
 
-**[SCREENSHOT TO ADD]** Named volume listing and successful read of `persistent`.
+![Named Volume Demo 1](../screenshots/6a-volume-demo-1.png)  
+![Named Volume Demo 2](../screenshots/6a-volume-demo-2.png)  
+
+*Named volume listing and successful read of `persistent`.*
 
 ## Exercise B — bind mount
 
@@ -30,8 +33,8 @@ mkdir -p "$HOME/docker-bind-demo"
 echo 'host file' > "$HOME/docker-bind-demo/example.txt"
 docker run --rm --mount "type=bind,source=$HOME/docker-bind-demo,target=/data,readonly" alpine cat /data/example.txt
 ```
-
-**[SCREENSHOT TO ADD]** Host file and matching container output.
+![Bind Mount Demo](../screenshots/6b-bind-volume-demo.png)  
+*Host file and matching container output.*
 
 ## Cleanup
 
