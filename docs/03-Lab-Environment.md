@@ -23,7 +23,7 @@
 Docker was installed before this documentation project; the installation is **not** being redone. Refer to [Docker's Ubuntu installation guide](https://docs.docker.com/engine/install/ubuntu/) 
 
 ```bash
-cat /etc/os-release
+cat /etc/*release*
 uname -r
 dpkg --print-architecture
 nproc
@@ -35,8 +35,9 @@ docker buildx version
 systemctl status docker --no-pager
 docker info
 ```
+![VM Hardware](../screenshots/2a-VM-HW.png)  
 ![Docker Version](../screenshots/3a-docker-versions.png)
-![Docker Configuration](../screenshots/3b-docker-config.png)
+
 
 *OS version and Docker/Compose versions. Output from `systemctl status docker` showing an active daemon (if active).*
 
@@ -50,6 +51,9 @@ docker image ls
 docker volume ls
 docker network ls
 ```
+![Docker Configuration](../screenshots/3b-docker-config.png)
+*Docker lab details*
+
 
 ## Ubuntu administration relevant to Docker
 
