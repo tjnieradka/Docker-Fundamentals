@@ -27,7 +27,8 @@ docker rm sleep-demo
 
 A container exits when its main process completes. An exited container remains listed until removed.
 
-**[SCREENSHOT TO ADD]** `sleep-demo` with `Exited (0)` status.
+![Sleep Container Demo](../screenshots/4a-sleep-demo.png)
+*`sleep-demo` with `Exited (0)` status.*
 
 ## Exercise B — detached Nginx service
 
@@ -40,18 +41,23 @@ curl -I http://localhost:8080
 docker stop nginx-demo
 docker rm nginx-demo
 ```
+![Nginx Demo 1](../screenshots/4b-nginx-demo-1.png)
 
-`-d` runs in the background. `-p 8080:80` publishes host port 8080 to container port 80. On a remote VM, browse to its reachable host address instead of your workstation's `localhost`.
+*IP address output from the VM host where Docker is installed. `-d` runs in the background. `-p 8080:80` publishes host port 8080 to container port 80. On a remote VM, browse to its reachable host address instead of your workstation's `localhost`.*
 
-**[SCREENSHOT TO ADD]** `docker ps` showing published port and browser/curl response from Nginx.
+![Nginx Demo 2](../screenshots/4b-nginx-demo-2.png)  
+*Browser response from Nginx when accessed from remote Rocky Linux VM*
 
 ## Exercise C - interactive and attached mode
 
 ```bash
 docker run --rm -it alpine sh
 ```
+![Interactive Shell Demo](../screenshots/4c-interactive-shell-demo.png)
 
-`-i` keeps standard input open; `-t` allocates a pseudo-terminal. `docker attach` connects to the main process streams; `docker exec` starts a new process in a running container. Avoid attaching to a service merely to obtain a shell.
+*Alpine Linux shell within a container running on Ubuntu host. `-i` keeps standard input open; `-t` allocates a pseudo-terminal.*
+
+**NOTE:** `docker attach` connects to the main process streams; `docker exec` starts a new process in a running container.*
 
 ## Cleanup
 
