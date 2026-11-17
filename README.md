@@ -1,8 +1,8 @@
 # Docker Foundations — Ubuntu Lab
 
-Practical notes and repeatable exercises covering Docker Engine, container lifecycle, images, Dockerfiles, networking, storage, Compose, registries, and troubleshooting.
+This repository contains practical notes and repeatable exercises covering Docker Engine, container lifecycle, images, Dockerfiles, networking, storage, Compose, registries, and troubleshooting.
 
-**Purpose:** demonstrate foundational Docker knowledge and experimentation in a personal Ubuntu Linux lab. This is a learning portfolio, not a production deployment guide.
+The purpose is to demonstrate foundational Docker knowledge and experimentation in a personal Ubuntu Linux lab. This is a learning portfolio, not a production deployment guide.
 
 ## Lab
 
@@ -30,7 +30,7 @@ Practical notes and repeatable exercises covering Docker Engine, container lifec
 
 ## Scope and attribution
 
-Based on independent review and hands-on exercises referenced on a Udemy/KodeKloud Docker course. Examples have been adapted and simplified; the original multi-container application is deliberately deferred. Commands and outputs are not represented as tested until actually executed in the lab.
+The content in this repository is based on independent review and hands-on exercises guided by a Udemy/KodeKloud Docker course. Examples have been adapted and simplified for this lab. The multi-container application exercise has been deferred for future development. Commands and results are documented only after being tested in the lab.
 
 ## References
 
