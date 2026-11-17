@@ -31,10 +31,9 @@ docker logs failing-demo
 docker inspect failing-demo --format '{{.State.ExitCode}}'
 docker rm failing-demo
 ```
+![Failing Container Demo](../screenshots/10a-failing-demo.png)  
 
-Expected exit code: `7`. This is an intentionally failing example, not a Docker daemon failure.
-
-**[SCREENSHOT TO ADD]** Exited status, logs, and exit code.
+*Expected exit code: `7`. This is an intentionally failing example, not a Docker daemon failure.*
 
 ## Exercise B — published port validation
 
@@ -45,8 +44,7 @@ curl -I http://localhost:8085
 docker rm -f check-web
 ```
 
-**[SCREENSHOT TO ADD]** Port mapping and successful HTTP header response.
+![Check Port Demo](../screenshots/10b-check-port-demo.png)  
 
-## Security reminder
+*Port mapping and successful HTTP header response.*
 
-Avoid pasting secrets, credentials, complete environment-variable dumps, or unredacted infrastructure details into public troubleshooting documentation.
