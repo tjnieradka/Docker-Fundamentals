@@ -30,10 +30,11 @@ curl -I http://localhost:8084
 docker compose logs --tail=10
 docker compose down
 ```
+![Docker Compose 1](../screenshots/8-compose-1.png)  
+![Docker Compose 2](../screenshots/8-compose-2.png)  
+![Docker Compose 3](../screenshots/8-compose-3.png)  
 
-**[SCREENSHOT TO ADD]** `docker compose ps` showing both services and their published ports.
-
-**[SCREENSHOT TO ADD]** HTTP responses from both services.
+*`docker compose ps` showing both services and their published ports. HTTP responses from both services.*
 
 ## YAML essentials
 
