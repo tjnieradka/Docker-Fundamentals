@@ -35,7 +35,9 @@ docker ps -a
 docker image ls
 ```
 
-**[SCREENSHOT TO ADD]** Successful `hello-world` output, followed by image and stopped-container listings.
+![Hello World](../screenshots/1-hello-world.png)
+
+**Successful `hello-world` output, followed by image and stopped-container listings.**
 
 ## Summary
 
