@@ -37,7 +37,7 @@ docker image ls
 
 ![Hello World](../screenshots/1-hello-world.png)
 
-**Successful `hello-world` output, followed by image and stopped-container listings.**
+*Successful `hello-world` output, followed by image and stopped-container listings.*
 
 ## Summary
 
