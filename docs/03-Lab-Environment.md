@@ -4,7 +4,8 @@
 
 | Item | Configuration |
 |---|---|
-| Hostname | `VAN-DOCKER-TEST` |
+| **Hostname** | `VAN-DOCKER-TEST` |
+| Purpose | VM for Docker labs |
 | OS | Ubuntu 24.04.3 LTS |
 | Architecture | x86_64 |
 | CPU / memory | 4 vCPUs / 8 GiB |
@@ -13,7 +14,9 @@
 | Buildx | v0.27.0 |
 | Storage driver | overlay2 |
 | Cgroup | v2, systemd driver |
-
+| **Hostname** | `VAN-ROCKY-TEST` |
+| Purpose | VM for remote testing |
+| OS | Rocky Linux 8.10 |
 
 ## Installation and validation
 
