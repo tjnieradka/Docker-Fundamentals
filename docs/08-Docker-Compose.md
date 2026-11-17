@@ -2,7 +2,7 @@
 
 ## Overview
 
-Compose defines and manages a group of services, networks, and volumes using a YAML file. Use the current `docker compose` CLI and Compose Specification; the old top-level `version:` field is obsolete.
+Compose defines and manages a group of services, networks, and volumes using a YAML file. The `docker compose` CLI and Compose specification is used to implement the configuration.
 
 ## Exercise — two Nginx services
 
