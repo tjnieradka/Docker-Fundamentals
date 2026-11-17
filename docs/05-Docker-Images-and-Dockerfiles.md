@@ -2,7 +2,7 @@
 
 ## Concepts
 
-A Dockerfile defines image-building instructions. Docker builds an image from a base image and additional layers. The container receives a writable layer at runtime. Prefer explicit, supported image tags over relying on `latest` for repeatable builds; for stronger reproducibility, pin a digest.
+A Dockerfile defines image-building instructions. Docker builds an image from a base image and additional layers. The container receives a writable layer at runtime. It is better to use explicit, supported image tags over relying on `latest` for repeatable builds.
 
 ## Minimal original example
 
@@ -28,10 +28,13 @@ curl http://localhost:8081
 docker history docker-foundations-web:local
 docker stop foundations-web && docker rm foundations-web
 ```
+![Dockerfile Demo 1](../screenshots/5-dockerfile-demo-1.png)  
+![Dockerfile Demo 2](../screenshots/5-dockerfile-demo-2.png)  
+![Dockerfile Demo 3](../screenshots/5-dockerfile-demo-3.png)  
+![Dockerfile Demo 4](../screenshots/5-dockerfile-demo-4.png)  
 
-**[SCREENSHOT TO ADD]** Successful build output and `docker image ls`.
 
-**[SCREENSHOT TO ADD]** Browser or curl output from the running custom image.
+*Successful build output and `docker image ls`. Successful browser output from running custom image*
 
 ## CMD versus ENTRYPOINT
 
