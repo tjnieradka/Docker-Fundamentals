@@ -21,15 +21,13 @@ docker image inspect alpine:3.21 --format '{{.RepoTags}}'
 docker tag alpine:3.21 foundations-alpine:local
 docker image ls foundations-alpine
 ```
+![Registry Demo](../screenshots/9-registry.png)  
 
-**[SCREENSHOT TO ADD]** Pull and local retagging output.
+*Pull and local retagging output.*
 
 ## Pushing an image
 
 Publishing to a remote registry requires an account, appropriate repository permissions, and authentication. Do not commit registry credentials or access tokens to GitHub. For Docker Hub, the typical workflow is `docker login`, `docker tag`, then `docker push` with an authorized namespace. This repository does not claim a successful push until performed.
 
-## Optional private registry (TBA)
-
-A self-hosted registry requires additional consideration for authentication, TLS, and access controls. Do not expose an unauthenticated HTTP registry on a public interface. A private-registry lab is optional and is not required to demonstrate Docker foundations.
 
 Reference: https://docs.docker.com/docker-hub/repos/
