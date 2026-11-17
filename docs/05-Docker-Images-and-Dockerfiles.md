@@ -4,7 +4,7 @@
 
 A Dockerfile defines image-building instructions. Docker builds an image from a base image and additional layers. The container receives a writable layer at runtime. It is better to use explicit, supported image tags over relying on `latest` for repeatable builds.
 
-## Minimal original example
+## Minimal example
 
 The repository includes a small Python HTTP example in [`../examples/python-web/`](../examples/python-web/). 
 
