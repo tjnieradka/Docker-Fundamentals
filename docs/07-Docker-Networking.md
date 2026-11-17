@@ -19,7 +19,10 @@ docker network inspect foundations-net
 
 Docker's embedded DNS on user-defined networks allows containers to resolve other containers by name. The internal resolver commonly appears as `127.0.0.11`.
 
-**[SCREENSHOT TO ADD]** `nslookup web-a` and network inspection output.
+![User-Defined Network 1](../screenshots/7a-user-defn-network-1.png)  
+![User-Defined Network 2](../screenshots/7a-user-defn-network-2.png)  
+
+*`nslookup web-a` and network inspection output. In the first screenshot, a dot is added after `web-a` so that DNS is not searching `web-a.localdomain*
 
 ## Exercise B — published port
 
@@ -29,7 +32,8 @@ curl -I http://localhost:8082
 docker port web-published
 ```
 
-**[SCREENSHOT TO ADD]** Published-port mapping and HTTP response.
+![Published Port](../screenshots/7b-published-port.png)  
+*Published-port mapping and HTTP response.*
 
 ## Cleanup
 
