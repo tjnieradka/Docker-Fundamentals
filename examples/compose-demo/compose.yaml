@@ -1,1 +1,9 @@
-
+services:
+  site_a:
+    image: nginx:stable
+    ports:
+      - "127.0.0.1:8083:80"
+  site_b:
+    image: nginx:stable
+    ports:
+      - "127.0.0.1:8084:80"
